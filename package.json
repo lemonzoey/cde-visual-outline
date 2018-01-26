@@ -1,7 +1,7 @@
 {
   "name": "cde-visual-outline",
   "main": "./lib/cde-visual-outline",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Extract the JSX or XML structure in the file and display the diagram",
   "keywords": [
     "JSX",
