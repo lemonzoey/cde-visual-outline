@@ -8,10 +8,15 @@ atom-notification .message {
     max-height: 250px !important;
     overflow-y: auto;
   }
-  // li.selected:focus::before {
-  //     background: #4d78cc !important;
-  //   }
-
+  li.selected:focus::before {
+    background: #4d78cc !important;
+  }
+  // .list-group .selected::before, .list-tree .selected::before {
+  //   background: #4d78cc !important;
+  // }
+  .icon-type-field::before {
+      content: "<>" !important;
+    }
   atom-notification.success.icon:before {
       color: #6b3b6d !important;
       background-color: #99929e !important;
