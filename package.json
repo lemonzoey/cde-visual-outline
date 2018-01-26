@@ -1,48 +1,33 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-        "scope": null,
-        "escapedName": null,
-        "name": null,
-        "rawSpec": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-        "spec": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-        "type": "local"
-      },
-      "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/apm-install-dir-118025-34622-hp6rxy.d2e4dvx6r"
-    ]
+  "name": "cde-visual-outline",
+  "main": "./lib/cde-visual-outline",
+  "version": "0.0.0",
+  "description": "Extract the JSX or XML structure in the file and display the diagram",
+  "keywords": [
+    "JSX",
+    "react",
+    "atom-ide-ui",
+    "language-server-protocol",
+    "outline-view"
   ],
-  "_from": "../d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-  "_id": "cde-visual-outline@0.0.8",
-  "_inCache": true,
-  "_location": "/cde-visual-outline",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-    "scope": null,
-    "escapedName": null,
-    "name": null,
-    "rawSpec": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-    "spec": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-    "type": "local"
+  "repository": "https://github.com/lemonzoey/cde-visual-outline.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
   },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "file:../d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-  "_shasum": "750708d2280c68d98ad5da0a4e2e482cc964914f",
-  "_shrinkwrap": null,
-  "_spec": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/d-118025-34622-1ojxn0n.45ttep14i/package.tgz",
-  "_where": "/private/var/folders/6t/nhfc2nhd0nj5t97hmlrv21vh0000gn/T/apm-install-dir-118025-34622-hp6rxy.d2e4dvx6r",
+  "devDependencies": {
+    "eslint": "^4.7.0"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.6.7",
+    "fuzzaldrin-plus": "^0.5.0",
+    "vscode-html-languageserver-bin": "^1.0.0"
+  },
   "atomCommands": {
     "cde-visual-outline:help": "Provides help information and descriptions of commands."
   },
   "author": {
     "name": "lemonzoey"
-  },
-  "bugs": {
-    "url": "https://github.com/lemonzoey/cde-visual-outline/issues"
   },
   "configSchema": {
     "additionalGrammars": {
@@ -76,35 +61,11 @@
       }
     }
   },
-  "dependencies": {
-    "atom-languageclient": "^0.6.7",
-    "fuzzaldrin-plus": "^0.5.0",
-    "vscode-html-languageserver-bin": "^1.0.0"
-  },
-  "description": "Extract the JSX or XML structure in the file and display the diagram",
-  "devDependencies": {
-    "eslint": "^4.7.0"
-  },
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
   "enhancedScopes": [
     "text.html.basic",
     "text.html.gohtml",
     "text.html.mustache"
   ],
-  "homepage": "https://github.com/lemonzoey/cde-visual-outline#readme",
-  "keywords": [
-    "JSX",
-    "react",
-    "atom-ide-ui",
-    "language-server-protocol",
-    "outline-view"
-  ],
-  "license": "MIT",
-  "main": "./lib/cde-visual-outline",
-  "name": "cde-visual-outline",
-  "optionalDependencies": {},
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
@@ -131,12 +92,5 @@
         "0.1.0": "provideOutlines"
       }
     }
-  },
-  "readme": "# cde-visual-outline\n### 1.cde-visual-outline的作用\n - 提取文件中的jsx或者xml结构，并展示示图\n\n### 2.使用此插件的条件\n - 1.先下载atom-ide-ui\n - 2.如果在使用ide-typescript这个插件，请先禁用，避免发生冲突\n \n### 3.启动方式\n - shift-commd-p:outline view(mac)\n - shift-ctrl-p :outline view(win)\n",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lemonzoey/cde-visual-outline.git"
-  },
-  "version": "0.0.9"
+  }
 }
